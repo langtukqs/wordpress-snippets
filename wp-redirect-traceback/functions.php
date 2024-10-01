@@ -15,4 +15,4 @@ function wp_redirect_tracback( $location, $status){
 		// Run die() to stop WordPress from (infinite) redirect
 		die();
 }
-add_filter( 'wp_redirect','stop_redirect', 9999, 2);
+add_filter( 'wp_redirect','wp_redirect_tracback', 9999, 2);
